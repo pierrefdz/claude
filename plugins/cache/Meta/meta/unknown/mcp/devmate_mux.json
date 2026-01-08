@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "devmate": {
+      "type": "stdio",
+      "command": "devmate_mux",
+      "args": ["/usr/local/bin/claude_code/plugins/meta/mcp/config_devmate.md"],
+      "env": {}
+    },
+    "www": {
+      "type": "stdio",
+      "command": "devmate_mux",
+      "args": ["/usr/local/bin/claude_code/plugins/meta/mcp/config_www.md"],
+      "env": {}
+    }
+  }
+}
