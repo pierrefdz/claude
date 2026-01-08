@@ -4,13 +4,16 @@
 # Except these files and folders
 !plugins/
 !commands/
+!agents/
 !settings.json
 
-# But ignore everything inside plugins/ and commands/ except their contents
+# But ignore everything inside plugins/, commands/, and agents/ except their contents
 plugins/*
 !plugins/**/
 commands/*
 !commands/**/
+agents/*
+!agents/**/
 
 # Ignore .DS_Store and other OS files
 .DS_Store
