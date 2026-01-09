@@ -13,7 +13,7 @@ Focus on:
 - `einsum()`, `matmul()`, `bmm()`  
 - `squeeze()`, `unsqueeze()`, `expand()`
 - `cat()`, `stack()`, `split()`
-- Attention mechanisms
+- Other tensor ops that change shape
 
 Add comments on the same line or above the operation:
 ```python
