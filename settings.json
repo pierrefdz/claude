@@ -1,7 +1,4 @@
 {
-  "enabledPlugins": {
-    "meta@Meta": true
-  },
   "env": {
     "DISABLE_AUTOUPDATER": "1"
   },
@@ -17,5 +14,8 @@
       "Bash(git diff:*)",
       "Bash(git log:*)"
     ]
+  },
+  "enabledPlugins": {
+    "meta@Meta": true
   }
 }
