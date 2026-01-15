@@ -18,5 +18,6 @@
   },
   "enabledPlugins": {
     "meta@Meta": true
-  }
+  },
+  "alwaysThinkingEnabled": false
 }

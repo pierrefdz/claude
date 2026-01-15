@@ -26,6 +26,7 @@ paths: *.py
 - Do not handle exceptions, except when absolutely necessary. When you do, handle them explicitly; do not use bare `except:` clauses.
 
 ## Imports
+- At the top of the file, after any module comments or docstrings.
 - Group imports in the following order: standard library, third-party, local.
 - Use absolute imports whenever possible.
 - Import only what you need; avoid wildcard imports (`from module import *`).
