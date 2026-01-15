@@ -29,6 +29,7 @@ This folder includes PyTorch research-focused agents and commands:
 | `/expes/new-experiment` | Set up a new PyTorch experiment config |
 | `/git/commit` | Stage and commit changes with auto-generated message |
 | `/git/commit-push-pr` | Commit, push, and open a PR in one step |
+| `/latex/prepare-arxiv` | Clean LaTeX project, add BBL, create tar.gz for arXiv submission |
 
 ### Rules (`rules/`)
 | Rule | Applies to | Description |
