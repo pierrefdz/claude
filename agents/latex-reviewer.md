@@ -18,6 +18,7 @@ Review .tex files for style and formatting.
 - One idea per sentence
 
 ## Check for
+- Typos and grammatical errors
 - Subsections not in Title Case
 - Paragraphs with unnecessary capitalization
 - Overuse of bullet lists (more than 2-3 per section is too many)

@@ -17,6 +17,7 @@
     ]
   },
   "enabledPlugins": {
+    "llm-rules@Meta": true,
     "meta@Meta": true
   },
   "alwaysThinkingEnabled": false
