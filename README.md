@@ -5,6 +5,7 @@ This folder contains **Claude Code** configuration, including custom slash comma
 
 The rest of the README also explains the core concepts Claude Code uses for extensibility — including **slash commands**, **agents**, **skills**, and how to organize your `.claude/` folder.
 
+---
 
 ## Example agents, commands, and skills
 
@@ -39,6 +40,7 @@ This folder includes PyTorch research-focused agents and commands:
 | `testing.md` | `*.py` | Use `if __name__ == '__main__':` blocks for quick tests |
 
 
+---
 
 ## Docs
 
@@ -60,8 +62,6 @@ They let you automate frequent tasks or workflows directly from Claude Code.  [l
 **When to use**
 - Quick, frequently-used actions like commit message generation, tests, code review summaries, formatting, etc.  [link](https://docs.claude.com/en/docs/claude-code/slash-commands?utm_source=chatgpt.com)
 
----
-
 ### 2. Agents (`.claude/agents/`)
 
 **What they are**  
@@ -75,8 +75,6 @@ Agents (a.k.a. subagents) are **specialist AI assistants** with specific capabil
 **When to use**
 - For focused, high-level tasks like architectural review, testing workflows, summarizing, and any expert-like automation.
 
----
-
 ### 3. Skills (`.claude/skills/`)
 
 **What they are**  
@@ -89,8 +87,6 @@ Skills are **modular, discoverable capabilities** that Claude can *automatically
 
 **When to use**
 - For complex, multi-file workflows or deep domain knowledge that you want Claude to apply intelligently.  [link](https://docs.claude.com/en/docs/claude-code/skills?utm_source=chatgpt.com)
-
----
 
 ### 4. Rules (`.claude/rules/`)
 
@@ -109,8 +105,6 @@ Rules are project-specific guidelines that Claude automatically applies based on
 - Language-specific best practices
 - Testing and documentation standards
 
----
-
 ### 5. About `tools/` and Other Helpers
 
 There is no *official required* `tools/` directory in Claude Code, but many teams use it as a **convention** to store scripts or executable helpers that skills or commands might call.  
@@ -120,8 +114,6 @@ For example:
 .claude/tools/report-generator.py
 ```
 These helpers are not directly recognized by Claude, but slash commands or skills can call them if tool access is allowed and referenced correctly.
-
----
 
 ### 📁 Example `.claude/` Folder Structure
 
