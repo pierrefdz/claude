@@ -10,7 +10,32 @@ The rest of the README also explains the core concepts Claude Code uses for exte
 
 This folder includes PyTorch research-focused agents and commands:
 
-:warning: TODO
+### Agents (`agents/`)
+| Agent | Description |
+|-------|-------------|
+| `code-reviewer` | Reviews PyTorch/ML code for over-engineering; encourages simple, readable research code |
+| `code-writer` | Implements features with minimal abstraction; adds tensor shape annotations |
+| `doc-checker` | Verifies README/docs accuracy against actual code |
+| `latex-reviewer` | Checks `.tex` files for style (Title Case subsections, sentence case paragraphs) |
+| `tensor-annotator` | Ensures tensor ops have dimension comments like `# b c h w -> b c (h w)` |
+
+### Commands (`commands/`)
+| Command | Description |
+|---------|-------------|
+| `/coding/add-docstring` | Add concise docstrings to functions/classes |
+| `/coding/annotate-tensors` | Add einops-style dimension annotations to tensor ops |
+| `/coding/review-simplicity` | Flag over-abstraction and unnecessary complexity |
+| `/coding/check-docs` | Verify documentation matches codebase |
+| `/expes/new-experiment` | Set up a new PyTorch experiment config |
+| `/git/commit` | Stage and commit changes with auto-generated message |
+| `/git/commit-push-pr` | Commit, push, and open a PR in one step |
+
+### Rules (`rules/`)
+| Rule | Applies to | Description |
+|------|------------|-------------|
+| `python.md` | `*.py` | Coding style: type hints, snake_case, tensor shape comments |
+| `comment.md` | all | Comments explain "why", not "what"; concise docstrings |
+| `testing.md` | `*.py` | Use `if __name__ == '__main__':` blocks for quick tests |
 
 
 
@@ -66,11 +91,26 @@ Skills are **modular, discoverable capabilities** that Claude can *automatically
 
 ---
 
-TODO: Add rules/
+## 4. Rules (`.claude/rules/`)
 
+**What they are**  
+Rules are project-specific guidelines that Claude automatically applies based on file patterns. They define coding standards, style conventions, and best practices for your codebase.
 
+**How they work**
+- Each `.md` file in `.claude/rules/` defines a set of rules.
+- Use YAML frontmatter with `paths` to specify which files the rules apply to (e.g., `paths: "*.py"`).
+- Rules without a `paths` field apply globally.
+- Claude automatically considers relevant rules when working with matching files.
 
-## 4. About `tools/` and Other Helpers
+**When to use**
+- Enforcing consistent coding style (naming conventions, formatting)
+- Project-specific conventions (tensor annotations, docstring format)
+- Language-specific best practices
+- Testing and documentation standards
+
+---
+
+## 5. About `tools/` and Other Helpers
 
 There is no *official required* `tools/` directory in Claude Code, but many teams use it as a **convention** to store scripts or executable helpers that skills or commands might call.  
 For example:
