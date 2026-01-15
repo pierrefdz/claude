@@ -42,7 +42,7 @@ This folder includes PyTorch research-focused agents and commands:
 
 ## Docs
 
-## 1. Slash Commands (`.claude/commands/`)
+### 1. Slash Commands (`.claude/commands/`)
 
 **What they are**  
 Custom slash commands are reusable prompts saved as Markdown files that you can invoke with:
@@ -62,7 +62,7 @@ They let you automate frequent tasks or workflows directly from Claude Code.  [l
 
 ---
 
-## 2. Agents (`.claude/agents/`)
+### 2. Agents (`.claude/agents/`)
 
 **What they are**  
 Agents (a.k.a. subagents) are **specialist AI assistants** with specific capabilities and context. They are more sophisticated than slash commands and can be triggered explicitly or by Claude deciding they are relevant.  [link](https://docs.claude.com/en/docs/claude-code/slash-commands?utm_source=chatgpt.com)
@@ -77,7 +77,7 @@ Agents (a.k.a. subagents) are **specialist AI assistants** with specific capabil
 
 ---
 
-## 3. Skills (`.claude/skills/`)
+### 3. Skills (`.claude/skills/`)
 
 **What they are**  
 Skills are **modular, discoverable capabilities** that Claude can *automatically* apply when relevant to a user’s query. They are broader and more structured than slash commands and are intended for rich workflows.  [link](https://docs.claude.com/en/docs/claude-code/skills?utm_source=chatgpt.com)
@@ -92,7 +92,7 @@ Skills are **modular, discoverable capabilities** that Claude can *automatically
 
 ---
 
-## 4. Rules (`.claude/rules/`)
+### 4. Rules (`.claude/rules/`)
 
 **What they are**  
 Rules are project-specific guidelines that Claude automatically applies based on file patterns. They define coding standards, style conventions, and best practices for your codebase.
@@ -111,7 +111,7 @@ Rules are project-specific guidelines that Claude automatically applies based on
 
 ---
 
-## 5. About `tools/` and Other Helpers
+### 5. About `tools/` and Other Helpers
 
 There is no *official required* `tools/` directory in Claude Code, but many teams use it as a **convention** to store scripts or executable helpers that skills or commands might call.  
 For example:
@@ -123,7 +123,7 @@ These helpers are not directly recognized by Claude, but slash commands or skill
 
 ---
 
-## 📁 Example `.claude/` Folder Structure
+### 📁 Example `.claude/` Folder Structure
 
 Below is a **comprehensive structure** that scales well for projects:
 
