@@ -16,5 +16,7 @@ This will allocate a node with the specified resources and give you a shell prom
 
 In this case:
 1. do the `srun` first and *wait* for it to be allocated. Do not run `srun ... python ...` directly.
+You need to check every 30s if you have been allocated. If you haven't been allocated after 5 minutes, use qos=h200_dev instead of qos=h200_avseal_high.
 2. activate the good environment with `conda env ...`.
 3. run the python commands.
+

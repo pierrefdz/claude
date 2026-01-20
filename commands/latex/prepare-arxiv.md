@@ -32,6 +32,11 @@ arxiv_latex_cleaner path/to/my_latex/
 ```
 
 This creates: `path/to/my_latex_arXiv/`
+If not installed, install it via pip:
+
+```bash
+pip install arxiv-latex-cleaner
+```
 
 ### Step 2: Copy BBL file
 
