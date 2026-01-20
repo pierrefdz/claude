@@ -5,9 +5,9 @@ description: Prepare a LaTeX project for arXiv submission
 
 ## Context
 
-- Current directory: !`pwd`
-- Subdirectories with .tex files: !`find . -maxdepth 2 -type d -exec sh -c 'ls {}/*.tex 2>/dev/null && echo "-> {}"' \; 2>/dev/null | grep -B1 "^->" | grep -v "^->" | head -10`
-- BBL files found: !`find . -name "*.bbl" 2>/dev/null`
+- Current directory: `pwd`
+- Subdirectories with .tex files: `find . -maxdepth 2 -type d -exec sh -c 'ls {}/*.tex 2>/dev/null && echo "-> {}"' \; 2>/dev/null | grep -B1 "^->" | grep -v "^->" | head -10`
+- BBL files found: `find . -name "*.bbl" 2>/dev/null`
 
 ## Your task
 
